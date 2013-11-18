@@ -1,0 +1,46 @@
+---
+---
+
+{% include header.html %}
+
+    <body>
+
+        {% include sidebar.html %}  
+
+        <div class="content " id="content">
+            <div class="wrapper">
+                <div class="heading"><i class="li_bulb "></i> Work</div>
+                <div class="hr"></div>
+                
+                <p class="status">Current availability is <span>limited</span></p>
+                
+                <p class="">{{site.workDescription}}</p>
+
+                <p class="statement"><i class="li_mail push-right"></i>If you'd like to discuss your project <a href="mailto:{{site.email}}?Subject=Hello">get in touch</a>.</p>
+
+                <div class="hr"></div>
+
+                <div class="project">
+                    <h1>Smolio</h1>
+                    <div class="heading"><i class="li_data"></i> html5, javascript, mysql, php &amp; codeignitor</div>
+                    <p>Smolio is the simple creative portfolio.</p>
+                    <img src="/../img/work/smolio.jpg">
+                </div>
+
+                <div class="project">
+                    <h1>3dmotive</h1>
+                    <div class="heading"><i class="li_data"></i> html5, javascript, php &amp; wordpress</div>
+                    <p>Videos tutorials by games industry pros.</p>
+                    <img src="/../img/work/3dm.jpg">
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            
+            {% include google_an.js %}  
+            {% include touch.js %}  
+            
+        </script>
+    </body>
+</html>

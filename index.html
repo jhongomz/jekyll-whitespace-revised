@@ -1,0 +1,33 @@
+---
+---
+
+{% include header.html %}
+
+    <body>
+
+        {% include sidebar.html %}  
+
+        <div class="content " id="content">
+            <div class="wrapper">
+                <div class="heading"><i class="li_pen"></i> Blog</div>
+                <div class="hr"></div>
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                        <li>
+                            <article> 
+                                <h1><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h1>
+                                {{post.excerpt}}
+                            </article>
+                        </li>
+                    {% endfor %}
+                </ul>            
+            </div>
+        </div>
+        <script type="text/javascript">
+            
+            {% include google_an.js %}              
+            {% include touch.js %}              
+            
+        </script>>
+    </body>
+</html>

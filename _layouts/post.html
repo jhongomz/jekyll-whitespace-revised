@@ -1,0 +1,40 @@
+{% include header.html %}
+
+    <body>
+
+        {% include sidebar.html %}
+
+        <div class="content" id="content">
+            <article>
+                <div class="clearfix">
+                    <div class="heading pull-left push-right"><i class="li_calendar"></i> {{ page.date | date_to_string }}</div>
+                    <div class="heading pull-left push-left"><i class="li_pen"></i> {{site.name}}</div>
+                </div>
+                <div class="hr"></div>
+
+                <!-- <a href="{{ site.base_url }}{{ page.url }}">Permlink</a> -->
+                <h1>{{ page.title }}</h1>
+                <p>{{ content }}</p>
+                
+                <div class="article-footer">
+                    <div class="heading"><i class="li_news "></i> You should also check out...</div>
+                    <div class="hr"></div>
+                    {% if page.previous.url %} 
+                        <a href="{{page.previous.url}}" title="{{page.previous.title}}"><h3>{{page.previous.title}}</h3></a>
+                        {{page.previous.excerpt}}
+                    {% endif %} 
+
+                    {% if page.next.url %} 
+                        <a href="{{page.next.url}}" title="{{page.next.title}}"><h3>{{page.next.title}}</h3></a>
+                        <p>{{page.next.excerpt}}</p>
+                    {% endif %} 
+                </div>
+            </article>
+        </div>
+        <script type="text/javascript">
+            
+            {% include touch.js %}  
+            
+        </script>>
+    </body>
+</html>
