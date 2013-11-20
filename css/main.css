@@ -115,9 +115,8 @@ a:hover {
     border-left: 1px solid #ccc;
     left: 0;
     position: fixed;
-    background: #fff url("/img/bgTile.jpg") repeat;
-/*    background-color: #242628;*/
-    color: #f9f9f9;
+    background-color: #3b7a8a;
+    color: #edf8fb;
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
@@ -164,7 +163,6 @@ a:hover {
 }
 
 .footer {
-/*    background-color: #242628;*/
     bottom: 0;
     display: block;
     font-size: 14px;
@@ -179,12 +177,13 @@ a:hover {
 .footer a {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
     text-decoration: none;
-    color: #fff;
+    color: #edf8fb;
 }
 
 .footer a:hover {
     background-color: transparent;
-    border-bottom: 1px dashed transparent;   
+    border-bottom: 1px dashed transparent;  
+    color: #fff;
 }
 
 .heading {
@@ -216,7 +215,7 @@ ul.post-list p {
 }
 
 nav {
-    background-color: #3875D7;
+    // background-color: #3875D7;
 }
 
 nav ul {
@@ -236,12 +235,13 @@ nav li {
 nav a {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
     text-decoration: none;
-    color: #fff;
+    color: #edf8fb;
 }
 
 nav a:hover {
     background-color: transparent;
-    border-bottom: 1px dashed transparent;   
+    border-bottom: 1px dashed transparent;  
+    color: #fff; 
 }
 
 article, .wrapper {
