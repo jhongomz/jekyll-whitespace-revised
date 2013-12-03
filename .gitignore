@@ -2,3 +2,7 @@
 *.sublime-project
 *.sublime-workspace
 _site/
+*.lock
+*.lock
+
+Gemfile.lock
